@@ -190,7 +190,3 @@ public class Program
 		Console.WriteLine("Game over!"); //"The game ends"
 	}
 }
-		while (one == " " || two == " " || three == " " || four == " " || five == " " || six == " " || seven == " " || eight == " " || nine == " ");
-		Console.WriteLine("Game over!"); //"The game ends"
-	}
-}
