@@ -17,6 +17,7 @@ public class Program
 		Console.WriteLine("Welcome to tic-tac-toe!"); //"Instructions for the user"
 		Console.WriteLine("You will now be able to put first 'X', then 'O' in spaces from 1 to 9 counting from the left, upper place");
 		Console.WriteLine("Let's begin!");
+		Console.WriteLine();
 		Console.WriteLine($" {one} | {two} | {three}"); //"Creating rows and collums for the board."
 		Console.WriteLine("---+---+---");
 		Console.WriteLine($" {four} | {five} | {six}");
@@ -30,6 +31,7 @@ public class Program
 				sym = "X";
 			else if (sym == "X" && change == true)
 				sym = "O";
+			Console.WriteLine();
 			Console.WriteLine("Please choose a number from 1 to 9"); //"Beginning the game"
 			int place = int.Parse(Console.ReadLine());
 			switch (place)
@@ -44,6 +46,7 @@ public class Program
 					{
 						one = sym;
 						Console.WriteLine($"{sym} moves to {place}!");
+						Console.WriteLine();
 						change = true;
 					}
 
@@ -58,6 +61,7 @@ public class Program
 					{
 						two = sym;
 						Console.WriteLine($"{sym} moves to {place}!");
+						Console.WriteLine();
 						change = true;
 					}
 
@@ -72,6 +76,7 @@ public class Program
 					{
 						three = sym;
 						Console.WriteLine($"{sym} moves to {place}!");
+						Console.WriteLine();
 						change = true;
 					}
 
@@ -86,6 +91,7 @@ public class Program
 					{
 						four = sym;
 						Console.WriteLine($"{sym} moves to {place}!");
+						Console.WriteLine();
 						change = true;
 					}
 
@@ -100,6 +106,7 @@ public class Program
 					{
 						five = sym;
 						Console.WriteLine($"{sym} moves to {place}!");
+						Console.WriteLine();
 						change = true;
 					}
 
@@ -114,6 +121,7 @@ public class Program
 					{
 						six = sym;
 						Console.WriteLine($"{sym} moves to {place}!");
+						Console.WriteLine();
 						change = true;
 					}
 
@@ -128,6 +136,7 @@ public class Program
 					{
 						seven = sym;
 						Console.WriteLine($"{sym} moves to {place}!");
+						Console.WriteLine();
 						change = true;
 					}
 
@@ -142,6 +151,7 @@ public class Program
 					{
 						eight = sym;
 						Console.WriteLine($"{sym} moves to {place}!");
+						Console.WriteLine();
 						change = true;
 					}
 
@@ -156,6 +166,7 @@ public class Program
 					{
 						nine = sym;
 						Console.WriteLine($"{sym} moves to {place}!");
+						Console.WriteLine();
 						change = true;
 					}
 
@@ -175,6 +186,10 @@ public class Program
 				Console.WriteLine($" {seven} | {eight} | {nine}");
 			}
 		}
+		while (one == " " || two == " " || three == " " || four == " " || five == " " || six == " " || seven == " " || eight == " " || nine == " ");
+		Console.WriteLine("Game over!"); //"The game ends"
+	}
+}
 		while (one == " " || two == " " || three == " " || four == " " || five == " " || six == " " || seven == " " || eight == " " || nine == " ");
 		Console.WriteLine("Game over!"); //"The game ends"
 	}
